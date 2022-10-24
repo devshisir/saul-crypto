@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="318px" height="335px" viewBox="0 0 318 335" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>D4E25245-3AEF-4A7A-BBAD-E3143E3AC384</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pricing-2.0" transform="translate(-1492.000000, -3771.000000)" fill="#FFFFFF" stroke="#D1EEFF">
+            <g id="_INTERESTED-IN-FLAT-FILES" transform="translate(110.000000, 3771.000000)">
+                <g id="box">
+                    <g id="box_2" transform="translate(1382.000000, -115.000000)">
+                        <polygon id="big_box_left_wall" points="21.3378906 132.554688 195.195402 233.921522 195.195402 449 23.4310345 352.174243"></polygon>
+                        <g id="box_behind" transform="translate(40.045977, 0.000000)">
+                            <path d="M0.137406655,31.9335136 L55.6563064,0.184981427 L109.505747,31.9335136 L109.505747,98.8879649 C109.505747,100.117958 108.84182,101.252165 107.769322,101.854354 L56.4871516,130.648379 C55.4527209,131.229193 54.1904329,131.229193 53.1560022,130.648379 L0.137406655,100.879382 L0.137406655,31.9335136 Z" id="base"></path>
+                            <polygon id="left_wall" points="54.7241792 131.136952 54.7241792 64.1277437 0.137189492 31.9338379 0.137189492 100.879242 20.5754829 112.372437"></polygon>
+                        </g>
+                        <polygon id="big_box_top" points="21.0287356 132.481159 194.110134 236.505348 272.801319 190.514738 193.906057 143.865019 290.504883 86.4833984 197.63818 30.013369"></polygon>
+                        <polygon id="big_box_front_wall" points="194.283691 236.333984 194.283691 276.966512 195.195402 447.799465 370.156425 350.263249 370.156425 238.283142 330.129211 260.916809 317.229614 253.537354 273.188927 279.427246 272.806335 190.503448"></polygon>
+                        <g id="turquoise_box" transform="translate(0.000000, 295.000000)">
+                            <g transform="translate(0.609195, 0.331551)">
+                                <polygon id="base" points="0.803602528 22.9340688 40.0289121 0.132850297 78.0747126 22.9340688 78.0747126 71.1606367 39.4391576 94.5009273 0.803602528 72.4497382"></polygon>
+                                <polygon id="left_wall" points="39.370344 94.5087202 39.370344 46.0553796 0.772274324 22.9509809 0.772274324 72.4386518"></polygon>
+                                <polygon id="top" points="0.789120027 22.9472578 39.3656759 46.4329213 78.119015 22.9472578 40.0171474 0.114249979"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

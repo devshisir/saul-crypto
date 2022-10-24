@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="389px" height="208px" viewBox="0 0 389 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>B32134B5-A467-4A23-8954-609EFD16C825</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pricing-2.0" transform="translate(-214.000000, -4043.000000)" fill="#FFFFFF">
+            <g id="_INTERESTED-IN-FLAT-FILES" transform="translate(110.000000, 3771.000000)">
+                <g id="box">
+                    <g transform="translate(84.000000, 273.000000)">
+                        <polygon id="gap_flor" stroke="#979797" points="290.141382 183.681818 366.95977 228.189888 272.970176 279.724599 209.609195 229.970242"></polygon>
+                        <polygon id="gap_wall" stroke="#D1EEFF" points="290.481689 86.4822388 291.287356 184.766016 192.793103 243.708556 192.793103 142.807217"></polygon>
+                        <polygon id="big_box_left_wall" stroke="#D1EEFF" points="21.3378906 132.554688 195.195402 233.921522 195.195402 449 23.4310345 352.174243"></polygon>
+                        <g id="middle_box" transform="translate(251.649425, 72.032086)" stroke="#D1EEFF">
+                            <polygon id="base" points="0.551240485 45.836798 79.7070687 0.265519053 156.482673 45.836798 156.482673 144.800473 78.5169568 188.872718 0.551240485 144.800473"></polygon>
+                            <polygon id="left_wall" points="78.4948618 188.903217 78.3780924 92.0478239 0.622052709 45.895893 0.622052709 144.846332"></polygon>
+                            <polygon id="top" points="78.3686724 92.8023914 156.532704 45.8246039 79.8393442 0.326312876 0.587146978 45.8246039"></polygon>
+                        </g>
+                        <g id="box_behind" transform="translate(40.045977, 0.000000)" stroke="#D1EEFF">
+                            <path d="M0.137406655,31.9335136 L55.6563064,0.184981427 L109.505747,31.9335136 L109.505747,98.8879649 C109.505747,100.117958 108.84182,101.252165 107.769322,101.854354 L56.4871516,130.648379 C55.4527209,131.229193 54.1904329,131.229193 53.1560022,130.648379 L0.137406655,100.879382 L0.137406655,31.9335136 Z" id="base"></path>
+                            <polygon id="left_wall" points="54.7241792 131.136952 54.7241792 64.1277437 0.137189492 31.9338379 0.137189492 100.879242 20.5754829 112.372437"></polygon>
+                            <polygon id="top" points="54.7175721 64.6534347 109.544721 31.9036865 55.6377388 0.193237305 0.162152871 31.9036865"></polygon>
+                        </g>
+                        <polygon id="big_box_top" stroke="#D1EEFF" points="21.0287356 132.481159 194.110134 236.505348 272.801319 190.514738 193.906057 143.865019 290.504883 86.4833984 197.63818 30.013369"></polygon>
+                        <polygon id="big_box_front_wall" stroke="#D1EEFF" points="194.283691 236.333984 194.283691 276.966512 195.195402 447.799465 370.156425 350.263249 370.156425 238.283142 330.129211 260.916809 317.229614 253.537354 273.188927 279.427246 272.806335 190.503448"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

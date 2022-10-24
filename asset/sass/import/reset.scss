@@ -1,43 +1,57 @@
 /*-- this is for webpage restae page desigm --*/
 @import 'color.scss';
-$mainfont: 'Roboto', sans-serif;
-*{
+$mainfont: 'Circular Std',
+sans-serif;
+
+* {
     margin: 0;
     padding: 0;
     outline: 0;
     font-family: $mainfont;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
     font-family: $mainfont;
-    li{
+
+    li {
         margin: 0;
         padding: 0;
         list-style: none;
         font-family: $mainfont;
     }
 }
-a{
+
+a {
     text-decoration: none;
     color: $titleColor;
     transition: 0.4s;
     font-family: $mainfont;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     color: $titleColor;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
     font-family: $mainfont;
 }
-body{
+
+body {
     position: relative;
     font-family: $mainfont;
 }
-p{
+
+p {
     margin: 0;
     padding: 0;
     color: $bodyColor;

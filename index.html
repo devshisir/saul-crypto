@@ -3,16 +3,16 @@
 
 <head>
    <meta charset="utf-8">
-   <title>Bootstrap 5 boilarplate</title>
+   <title>coinlayer API - Free, Real-time Crypto Rates API</title>
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link href="http://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
    <!-- Favicons -->
-   <link rel="apple-touch-icon" href="asset/img/favicons/apple-touch-icon.png" sizes="180x180">
-   <link rel="icon" href="asset/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-   <link rel="icon" href="asset/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+   <link rel="shortcut icon" href="asset/img/favicons/coinlayer_icon.ico">
+   <link rel="apple-touch-icon" href="asset/img/favicons/coinlayer_apple_icon.png">
    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
    <link rel="stylesheet" href="asset/css/fontawsome.min.css">
+   <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
    <link rel="stylesheet" href="asset/css/style.css">
    <link rel="stylesheet" href="asset/css/responsive.css">
    <!-- this is for mordanizar js link -->
@@ -20,37 +20,536 @@
 </head>
 
 <body>
-   <div class="container">
-      <h1>I am bootstrap 5 boilarplate</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus similique unde veritatis optio. Doloremque, et eveniet! Similique doloremque dignissimos nemo dolore eum blanditiis minima aspernatur aperiam ducimus quas in cumque, non cum possimus earum at harum, aliquid doloribus voluptatum.</p>
-   </div>
+   <!-- start header top area -->
+   <header id="headerTop">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-xl-3">
+               <div class="logoBox">
+                  <a href="index.html">
+                     <img src="./asset/img/logo.svg" class="img-fluid" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="col-xl-9">
+               <div class="rightMenuBox text-end">
+                  <div class="menuBox">
+                     <nav>
+                        <ul>
+                           <li>
+                              <a href="./pricing.html">Pricing</a>
+                           </li>
+                           <li>
+                              <a href="#">Documentation</a>
+                           </li>
+                           <li>
+                              <a href="#">FAQ</a>
+                           </li>
+                           <li>
+                              <a href="#">Affiliates</a>
+                           </li>
+                           <li>
+                              <a href="#">Blog</a>
+                           </li>
+                           <li>
+                              <a href="#">
+                                 <span class="menuIcon"></span>
+                                 Status
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <div class="actionsBox">
+                     <ul>
+                        <li class="loginbtn">
+                           <a href="#">Login</a>
+                        </li>
+                        <li class="getApiKeyBtn">
+                           <a href="#">GET FREE API KEY</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- end header top area -->
+   <!-- start hero banner -->
+   <section id="heroSection" style="background-image: url('./asset/img/hero-baner.png');">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-xl-6">
+               <div class="bannerContent">
+                  <h3>Real-time Crypto Currency <br>  Exchange Rates JSON <br> Rest API</h3>
+                  <p>Your trusted resource for accurate crypto market data, <br>
+                  covering 25 exchanges and more than 385 coins.</p>
+                  <ul>
+                     <li>
+                        <a class="btn_orange" href="#">Sign up free</a>
+                     </li>
+                     <li>
+                        <a href="#">Learn more</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-xl-6">
+               <div class="rightImageBox text-end">
+                  <img src="./asset/img/banner-right.png" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end hero banner -->
+   <!-- start data slider  -->
+   <section id="dataSlider">
+      <div class="tickeroverlay-left"></div>
+      <div class="tickeroverlay-right"></div>
+      <div class="dataSlideractive owl-carousel">
+         <!-- single slider item -->
+         <div class="dataSliderItem">
+            <div class="leftContent">
+               <h5>BTC/USD <span>1.11%</span></h5>
+               <h3>19,270.15 <span>USD</span></h3>
+               <p><span>High:</span> 20,243.60</p>
+               <p><span>Low:</span> 19,073.88</p>
+            </div>
+            <div class="rightContent">
+               <svg width="100%" height="100%" viewBox="0 0 100 50"><polygon points="0,50 0.00,6.31 1.11,6.71 2.22,3.23 3.33,1.04 4.44,1.30 5.56,1.57 6.67,1.92 7.78,2.09 8.89,2.70 10.00,3.02 11.11,3.29 12.22,2.51 13.33,2.80 14.44,2.54 15.56,1.11 16.67,2.95 17.78,0.86 18.89,1.03 20.00,0.00 21.11,0.25 22.22,0.05 23.33,0.40 24.44,0.76 25.56,1.83 26.67,2.01 27.78,7.48 28.89,6.96 30.00,6.17 31.11,6.29 32.22,5.82 33.33,6.23 34.44,6.25 35.56,8.75 36.67,8.85 37.78,10.17 38.89,8.35 40.00,9.64 41.11,9.15 42.22,9.02 43.33,9.21 44.44,9.50 45.56,9.36 46.67,9.66 47.78,11.68 48.89,10.73 50.00,10.68 51.11,6.41 52.22,5.92 53.33,5.67 54.44,4.41 55.56,8.84 56.67,8.87 57.78,9.86 58.89,9.73 60.00,9.02 61.11,10.38 62.22,10.33 63.33,11.53 64.44,12.33 65.56,10.45 66.67,10.79 67.78,11.44 68.89,11.46 70.00,10.77 71.11,11.16 72.22,10.45 73.33,10.13 74.44,10.45 75.56,10.66 76.67,11.20 77.78,9.98 78.89,8.72 80.00,8.89 81.11,9.28 82.22,10.21 83.33,10.47 84.44,10.39 85.56,10.99 86.67,11.08 87.78,11.00 88.89,10.31 90.00,10.96 91.11,11.07 92.22,10.63 93.33,10.08 94.44,10.63 95.56,10.69 96.67,11.01 97.78,10.85 98.89,10.56 100.00,10.76 100,50" class="line"></polygon></svg>
+               <p>Last 90 days</p>
+            </div>
+         </div>
+         <!-- single slider item -->
+         <div class="dataSliderItem">
+            <div class="leftContent">
+               <h5>BTC/USD <span>1.11%</span></h5>
+               <h3>19,270.15 <span>USD</span></h3>
+               <p><span>High:</span> 20,243.60</p>
+               <p><span>Low:</span> 19,073.88</p>
+            </div>
+            <div class="rightContent">
+               <svg width="100%" height="100%" viewBox="0 0 100 50"><polygon points="0,50 0.00,6.31 1.11,6.71 2.22,3.23 3.33,1.04 4.44,1.30 5.56,1.57 6.67,1.92 7.78,2.09 8.89,2.70 10.00,3.02 11.11,3.29 12.22,2.51 13.33,2.80 14.44,2.54 15.56,1.11 16.67,2.95 17.78,0.86 18.89,1.03 20.00,0.00 21.11,0.25 22.22,0.05 23.33,0.40 24.44,0.76 25.56,1.83 26.67,2.01 27.78,7.48 28.89,6.96 30.00,6.17 31.11,6.29 32.22,5.82 33.33,6.23 34.44,6.25 35.56,8.75 36.67,8.85 37.78,10.17 38.89,8.35 40.00,9.64 41.11,9.15 42.22,9.02 43.33,9.21 44.44,9.50 45.56,9.36 46.67,9.66 47.78,11.68 48.89,10.73 50.00,10.68 51.11,6.41 52.22,5.92 53.33,5.67 54.44,4.41 55.56,8.84 56.67,8.87 57.78,9.86 58.89,9.73 60.00,9.02 61.11,10.38 62.22,10.33 63.33,11.53 64.44,12.33 65.56,10.45 66.67,10.79 67.78,11.44 68.89,11.46 70.00,10.77 71.11,11.16 72.22,10.45 73.33,10.13 74.44,10.45 75.56,10.66 76.67,11.20 77.78,9.98 78.89,8.72 80.00,8.89 81.11,9.28 82.22,10.21 83.33,10.47 84.44,10.39 85.56,10.99 86.67,11.08 87.78,11.00 88.89,10.31 90.00,10.96 91.11,11.07 92.22,10.63 93.33,10.08 94.44,10.63 95.56,10.69 96.67,11.01 97.78,10.85 98.89,10.56 100.00,10.76 100,50" class="line"></polygon></svg>
+               <p>Last 90 days</p>
+            </div>
+         </div>
+         <!-- single slider item -->
+         <div class="dataSliderItem">
+            <div class="leftContent">
+               <h5>BTC/USD <span>1.11%</span></h5>
+               <h3>19,270.15 <span>USD</span></h3>
+               <p><span>High:</span> 20,243.60</p>
+               <p><span>Low:</span> 19,073.88</p>
+            </div>
+            <div class="rightContent">
+               <svg width="100%" height="100%" viewBox="0 0 100 50"><polygon points="0,50 0.00,6.31 1.11,6.71 2.22,3.23 3.33,1.04 4.44,1.30 5.56,1.57 6.67,1.92 7.78,2.09 8.89,2.70 10.00,3.02 11.11,3.29 12.22,2.51 13.33,2.80 14.44,2.54 15.56,1.11 16.67,2.95 17.78,0.86 18.89,1.03 20.00,0.00 21.11,0.25 22.22,0.05 23.33,0.40 24.44,0.76 25.56,1.83 26.67,2.01 27.78,7.48 28.89,6.96 30.00,6.17 31.11,6.29 32.22,5.82 33.33,6.23 34.44,6.25 35.56,8.75 36.67,8.85 37.78,10.17 38.89,8.35 40.00,9.64 41.11,9.15 42.22,9.02 43.33,9.21 44.44,9.50 45.56,9.36 46.67,9.66 47.78,11.68 48.89,10.73 50.00,10.68 51.11,6.41 52.22,5.92 53.33,5.67 54.44,4.41 55.56,8.84 56.67,8.87 57.78,9.86 58.89,9.73 60.00,9.02 61.11,10.38 62.22,10.33 63.33,11.53 64.44,12.33 65.56,10.45 66.67,10.79 67.78,11.44 68.89,11.46 70.00,10.77 71.11,11.16 72.22,10.45 73.33,10.13 74.44,10.45 75.56,10.66 76.67,11.20 77.78,9.98 78.89,8.72 80.00,8.89 81.11,9.28 82.22,10.21 83.33,10.47 84.44,10.39 85.56,10.99 86.67,11.08 87.78,11.00 88.89,10.31 90.00,10.96 91.11,11.07 92.22,10.63 93.33,10.08 94.44,10.63 95.56,10.69 96.67,11.01 97.78,10.85 98.89,10.56 100.00,10.76 100,50" class="line"></polygon></svg>
+               <p>Last 90 days</p>
+            </div>
+         </div>
+         <!-- single slider item -->
+         <div class="dataSliderItem">
+            <div class="leftContent">
+               <h5>BTC/USD <span>1.11%</span></h5>
+               <h3>19,270.15 <span>USD</span></h3>
+               <p><span>High:</span> 20,243.60</p>
+               <p><span>Low:</span> 19,073.88</p>
+            </div>
+            <div class="rightContent">
+               <svg width="100%" height="100%" viewBox="0 0 100 50"><polygon points="0,50 0.00,6.31 1.11,6.71 2.22,3.23 3.33,1.04 4.44,1.30 5.56,1.57 6.67,1.92 7.78,2.09 8.89,2.70 10.00,3.02 11.11,3.29 12.22,2.51 13.33,2.80 14.44,2.54 15.56,1.11 16.67,2.95 17.78,0.86 18.89,1.03 20.00,0.00 21.11,0.25 22.22,0.05 23.33,0.40 24.44,0.76 25.56,1.83 26.67,2.01 27.78,7.48 28.89,6.96 30.00,6.17 31.11,6.29 32.22,5.82 33.33,6.23 34.44,6.25 35.56,8.75 36.67,8.85 37.78,10.17 38.89,8.35 40.00,9.64 41.11,9.15 42.22,9.02 43.33,9.21 44.44,9.50 45.56,9.36 46.67,9.66 47.78,11.68 48.89,10.73 50.00,10.68 51.11,6.41 52.22,5.92 53.33,5.67 54.44,4.41 55.56,8.84 56.67,8.87 57.78,9.86 58.89,9.73 60.00,9.02 61.11,10.38 62.22,10.33 63.33,11.53 64.44,12.33 65.56,10.45 66.67,10.79 67.78,11.44 68.89,11.46 70.00,10.77 71.11,11.16 72.22,10.45 73.33,10.13 74.44,10.45 75.56,10.66 76.67,11.20 77.78,9.98 78.89,8.72 80.00,8.89 81.11,9.28 82.22,10.21 83.33,10.47 84.44,10.39 85.56,10.99 86.67,11.08 87.78,11.00 88.89,10.31 90.00,10.96 91.11,11.07 92.22,10.63 93.33,10.08 94.44,10.63 95.56,10.69 96.67,11.01 97.78,10.85 98.89,10.56 100.00,10.76 100,50" class="line"></polygon></svg>
+               <p>Last 90 days</p>
+            </div>
+         </div>
+         <!-- single slider item -->
+         <div class="dataSliderItem">
+            <div class="leftContent">
+               <h5>BTC/USD <span>1.11%</span></h5>
+               <h3>19,270.15 <span>USD</span></h3>
+               <p><span>High:</span> 20,243.60</p>
+               <p><span>Low:</span> 19,073.88</p>
+            </div>
+            <div class="rightContent">
+               <svg width="100%" height="100%" viewBox="0 0 100 50"><polygon points="0,50 0.00,6.31 1.11,6.71 2.22,3.23 3.33,1.04 4.44,1.30 5.56,1.57 6.67,1.92 7.78,2.09 8.89,2.70 10.00,3.02 11.11,3.29 12.22,2.51 13.33,2.80 14.44,2.54 15.56,1.11 16.67,2.95 17.78,0.86 18.89,1.03 20.00,0.00 21.11,0.25 22.22,0.05 23.33,0.40 24.44,0.76 25.56,1.83 26.67,2.01 27.78,7.48 28.89,6.96 30.00,6.17 31.11,6.29 32.22,5.82 33.33,6.23 34.44,6.25 35.56,8.75 36.67,8.85 37.78,10.17 38.89,8.35 40.00,9.64 41.11,9.15 42.22,9.02 43.33,9.21 44.44,9.50 45.56,9.36 46.67,9.66 47.78,11.68 48.89,10.73 50.00,10.68 51.11,6.41 52.22,5.92 53.33,5.67 54.44,4.41 55.56,8.84 56.67,8.87 57.78,9.86 58.89,9.73 60.00,9.02 61.11,10.38 62.22,10.33 63.33,11.53 64.44,12.33 65.56,10.45 66.67,10.79 67.78,11.44 68.89,11.46 70.00,10.77 71.11,11.16 72.22,10.45 73.33,10.13 74.44,10.45 75.56,10.66 76.67,11.20 77.78,9.98 78.89,8.72 80.00,8.89 81.11,9.28 82.22,10.21 83.33,10.47 84.44,10.39 85.56,10.99 86.67,11.08 87.78,11.00 88.89,10.31 90.00,10.96 91.11,11.07 92.22,10.63 93.33,10.08 94.44,10.63 95.56,10.69 96.67,11.01 97.78,10.85 98.89,10.56 100.00,10.76 100,50" class="line"></polygon></svg>
+               <p>Last 90 days</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end data slider  -->
+   <!-- start presentation area -->
+   <section id="presentation">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="topHeading text-center">
+                  <i class="fa-light fa-earth-americas"></i>
+                  <h3>Join the global standard in crypto data</h3>
+                  <p>Using coinlayer you are building on top of a rock-solid crypto exchange rates source — unparalleled in accuracy and consistency.</p>
+               </div>
+               <div class="mainItemBox">
+                  <div class="row">
+                     <div class="col-xl-4">
+                        <div class="singleItemBox">
+                           <div class="topHead">
+                              <div class="icon"><i class="fa-light fa-database"></i></div>
+                              <div class="content">
+                                 <h4>385+ Cryptocurrencies</h4>
+                              </div>
+                           </div>
+                           <div class="contentBox">
+                              <p>Instantly retrieve up-to-date crypto exchange rate data for more than 385 cryptocurrencies, collected from 25+ exchanges.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4">
+                        <div class="singleItemBox">
+                           <div class="topHead">
+                              <div class="icon"><i class="fa-light fa-server"></i></div>
+                              <div class="content">
+                                 <h4>Rock-Solid Sources</h4>
+                              </div>
+                           </div>
+                           <div class="contentBox">
+                              <p>Our crypto rates API is powered by a series of reliable crypto exchange providers, ensuring the highest level of accuracy.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4">
+                        <div class="singleItemBox">
+                           <div class="topHead">
+                              <div class="icon"><i class="fa-light fa-clock"></i></div>
+                              <div class="content">
+                                 <h4>Historical Data</h4>
+                              </div>
+                           </div>
+                           <div class="contentBox">
+                              <p>See how cryptocurrencies have developed over time by querying the API for historical data all the way back to the year 2011.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4">
+                        <div class="singleItemBox">
+                           <div class="topHead">
+                              <div class="icon"><i class="fa-light fa-square-terminal"></i></div>
+                              <div class="content">
+                                 <h4>Powerful JSON API</h4>
+                              </div>
+                           </div>
+                           <div class="contentBox">
+                              <p>The coinlayer API is backed by a solid and highly available cloud infrastructure, delivering your data in milliseconds.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4">
+                        <div class="singleItemBox">
+                           <div class="topHead">
+                              <div class="icon"><i class="fa-light fa-shield-check"></i></div>
+                              <div class="content">
+                                 <h4>Bank-Grade Security</h4>
+                              </div>
+                           </div>
+                           <div class="contentBox">
+                              <p>All request and response data sent from and to the coinlayer API is secured via industry-standard 256-bit HTTPS encryption.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4">
+                        <div class="singleItemBox">
+                           <div class="topHead">
+                              <div class="icon"><i class="fa-light fa-life-ring"></i></div>
+                              <div class="content">
+                                 <h4>Dedicated Support</h4>
+                              </div>
+                           </div>
+                           <div class="contentBox">
+                              <p>We take customer satisfaction seriously, which is why our support team is will do anything to get you what you need, when you need it.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="curved" class="text-center bottomCurved">
+                  <i class="fa-light fa-trophy-star"></i>
+                  <div aria-label="25.000 happy customers can't be wrong" style="position: relative; height: 1.78826em;">
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.268842em) rotate(4.68727deg); transform-origin: center -109.424em;">2</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.275735em) rotate(4.40212deg); transform-origin: center -109.424em;">5</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.148438em) rotate(4.18002deg); transform-origin: center -109.424em;">.</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.309743em) rotate(3.94011deg); transform-origin: center -109.424em;">0</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.309743em) rotate(3.61573deg); transform-origin: center -109.424em;">0</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.309743em) rotate(3.29136deg); transform-origin: center -109.424em;">0</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.124081em) rotate(3.06421deg); transform-origin: center -109.424em;">&nbsp;</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.287224em) rotate(2.84884deg); transform-origin: center -109.424em;">h</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.266085em) rotate(2.55912deg); transform-origin: center -109.424em;">a</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.30239em) rotate(2.26146deg); transform-origin: center -109.424em;">p</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.30239em) rotate(1.94479deg); transform-origin: center -109.424em;">p</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.271599em) rotate(1.64424deg); transform-origin: center -109.424em;">y</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.124081em) rotate(1.43705deg); transform-origin: center -109.424em;">&nbsp;</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.27068em) rotate(1.23035deg); transform-origin: center -109.424em;">c</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.288603em) rotate(0.937501deg); transform-origin: center -109.424em;">u</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.22886em) rotate(0.66655deg); transform-origin: center -109.424em;">s</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.182904em) rotate(0.450944deg); transform-origin: center -109.424em;">t</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.289522em) rotate(0.203575deg); transform-origin: center -109.424em;">o</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.436581em) rotate(-0.176624deg); transform-origin: center -109.424em;">m</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.274357em) rotate(-0.548881deg); transform-origin: center -109.424em;">e</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.190257em) rotate(-0.79216deg); transform-origin: center -109.424em;">r</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.22886em) rotate(-1.01162deg); transform-origin: center -109.424em;">s</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.124081em) rotate(-1.19642deg); transform-origin: center -109.424em;">&nbsp;</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.27068em) rotate(-1.40312deg); transform-origin: center -109.424em;">c</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.266085em) rotate(-1.68418deg); transform-origin: center -109.424em;">a</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.287224em) rotate(-1.9739deg); transform-origin: center -109.424em;">n</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.105239em) rotate(-2.1794deg); transform-origin: center -109.424em;">'</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.182904em) rotate(-2.33028deg); transform-origin: center -109.424em;">t</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.124081em) rotate(-2.49102deg); transform-origin: center -109.424em;">&nbsp;</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.30239em) rotate(-2.71433deg); transform-origin: center -109.424em;">b</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.274357em) rotate(-3.01632deg); transform-origin: center -109.424em;">e</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.124081em) rotate(-3.22495deg); transform-origin: center -109.424em;">&nbsp;</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.407169em) rotate(-3.50312deg); transform-origin: center -109.424em;">w</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.190257em) rotate(-3.81594deg); transform-origin: center -109.424em;">r</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.289522em) rotate(-4.06716deg); transform-origin: center -109.424em;">o</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.287224em) rotate(-4.36915deg); transform-origin: center -109.424em;">n</span>
+                     <span style="display: inline-block; position: absolute; bottom: 0px; left: 50%; transform: translateX(-0.294577em) rotate(-4.67379deg); transform-origin: center -109.424em;">g</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end presentation area -->
+   <!-- start brand area -->
+   <section id="brandArea">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-11 mx-auto">
+               <div class="brandItemBox">
+                  <div class="songleBrandItem">
+                     <a href="#">
+                        <img src="./asset/img/brand/1.png" alt="">
+                     </a>
+                  </div>
+                  <div class="songleBrandItem">
+                     <a href="#">
+                        <img src="./asset/img/brand/2.png" alt="">
+                     </a>
+                  </div>
+                  <div class="songleBrandItem">
+                     <a href="#">
+                        <img src="./asset/img/brand/3.png" alt="">
+                     </a>
+                  </div>
+                  <div class="songleBrandItem">
+                     <a href="#">
+                        <img src="./asset/img/brand/4.png" alt="">
+                     </a>
+                  </div>
+                  <div class="songleBrandItem">
+                     <a href="#">
+                        <img src="./asset/img/brand/5.png" alt="">
+                     </a>
+                  </div>
+                  <div class="songleBrandItem">
+                     <a href="#">
+                        <img src="./asset/img/brand/6.png" alt="">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end brand area -->
+   <!-- double info box -->
+   <section id="doubleInfoBox">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-6 bright">
+               <div class="infoContent">
+                  <div class="topHead">
+                     <i class="fa-light fa-users"></i>
+                     <h4>Developers First</h4>
+                  </div>
+                  <div class="content">
+                     <p>The coinlayer API was built with three things in mind: Performance, ease of use and consistency. Your use of coinlayer comes with a straightforward RESTful request and response structure, extensive and interactive API documentation, integration guides and response times as low as 20 milliseconds. </p>
+                     <a href="#">Explore API Documentation <i class="fa-light fa-arrow-right"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-6 bleft">
+               <div class="infoContent">
+                  <div class="topHead">
+                     <i class="fa-light fa-tags"></i>
+                     <h4>Easy On Your Budget</h4>
+                  </div>
+                  <div class="content">
+                     <p>Most crypto market data APIs come with high monthly fees, no customer support and low monthly quota. At coinlayer one of our pricinples is to support companies and teams of any size. Whether you are a freelancer, SMB or large corporation — our API service has got you covered.</p>
+                     <a href="#">Price & Subscriptions <i class="fa-light fa-arrow-right"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end double info box -->
+   <!-- start footer area -->
+   <footer id="footerArea">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-3">
+               <div class="footerLogoBox">
+                  <div class="logo">
+                     <a href="index.html">
+                        <img src="./asset/img/logo.svg" alt="">
+                     </a>
+                  </div>
+                  <div class="socialBox">
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <img src="./asset/img/social/github-original.svg" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <img src="./asset/img/social/facebook-original.svg" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <img src="./asset/img/social/instagram.png" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <img src="./asset/img/social/youtube.png" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <img src="./asset/img/social/twitter-original.svg" alt="">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <img src="./asset/img/social/linkedin-original.svg" alt="">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-9">
+               <div class="menuBox">
+                  <div class="menuBoxItem">
+                     <h4>PRODUCT</h4>
+                     <ul>
+                        <li>
+                           <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                           <a href="#">List Your API</a>
+                        </li>
+                        <li>
+                           <a href="#">Why choose us?</a>
+                        </li>
+                        <li>
+                           <a href="#">Marketplace</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="menuBoxItem">
+                     <h4>DOCS & HELP</h4>
+                     <ul>
+                        <li>
+                           <a href="#">Documentation</a>
+                        </li>
+                        <li>
+                           <a href="#">Blog</a>
+                        </li>
+                        <li>
+                           <a href="#">FAQs</a>
+                        </li>
+                        <li>
+                           <a href="#">Press</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="menuBoxItem">
+                     <h4>ACCOUNT</h4>
+                     <ul>
+                        <li>
+                           <a href="#">Log In</a>
+                        </li>
+                        <li>
+                           <a href="#">Forgot Password</a>
+                        </li>
+                        <li>
+                           <a href="#">FREE Signup</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="menuBoxItem">
+                     <h4>GET IN TOUCH</h4>
+                     <ul>
+                        <li>
+                           <a href="#">Contact</a>
+                        </li>
+                        <li>
+                           <a href="#">Get a quote</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row footerBottom">
+            <div class="col-12">
+               <div class="secondLink">
+                  <ul>
+                     <li><a href="#">Imprint / Legal</a></li>
+                     <li>|</li>
+                     <li><a href="#">Privacy </a></li>
+                     <li>|</li>
+                     <li><a href="#">Terms </a></li>
+                     <li>|</li>
+                     <li><a href="#">Cookie Preference</a></li>
+                     <li>|</li>
+                     <li><a href="#">Sitemap</a></li>
+                  </ul>
+               </div>
+               <div class="copyright">
+                  <p>© 2022 Coinlayer API, an <a href="#">APILayer</a> product. All rights reserved.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer area -->
+   <!-- start cookie area -->
+   <div id="cookieNotice" class="light display-right">
+      <div id="closeIcon" style="display: none;">
+      </div>
+      <div class="title-wrap">
+          <h4>Cookie Consent</h4>
+      </div>
+      <div class="content-wrap">
+          <div class="msg-wrap">
+              <p>This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our  <a href="#">Privacy Policy</a></p>
+              <div class="btn-wrap">
+                  <button onclick="acceptCookieConsent();">Accept</button>
+              </div>
+          </div>
+      </div>
+  </div>
    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
 
 
    <!-- all javascript load here -->
    <script src="asset/js/vendor/jquery-3.3.1.min.js"></script>
    <script src="asset/js/bootstrap.bundle.min.js"></script>
+   <script src="asset/js/owl.carousel.min.js"></script>
    <script src="asset/js/custom.js"></script>
+   <script src="./asset/js/cookie.js"></script>
 </body>
 
 </html>
