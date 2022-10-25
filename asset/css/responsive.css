@@ -7,18 +7,188 @@
 
 
 /* LG Device :992px. */
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #heroSection .rightImageBox img {
+        width: 100%;
+    }
+    #presentation {
+        padding: 50px 0 130px 0;
+    }
+    #brandArea {
+        padding-top: 80px;
+    }
+    #footerArea .footerLogoBox .socialBox ul li {
+        margin-bottom: 15px;
+    }
+    #pricingArea .enterprise {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1199px) {
+    
+    #brandArea .brandItemBox {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 991px) {
+    #headerTop {
+        display: none;
+    }
+    #mobileMenu{
+        display: block;
+    }
+    .flex-reverse{
+        flex-direction: column-reverse;
+    }
+    #heroSection .bannerContent {
+        text-align: center;
+        margin-top: 50px;
+    }
+    #heroSection .rightImageBox {
+        text-align: center !important;
+    }
+    #heroSection {
+        padding: 100px 0px 100px 0px;
+    }
+    #pricingArea .pricingMoreInfo {
+        display: none;
+    }
+    .mobileSelectPrice{
+        display: block;
+    }
+
+    /* pricing toggle */
+    .free,
+    .startup,.streamer,.professional,
+    .enterprisePrice{
+        display: none;
+    }
+    .free.active{
+        display: block;
+    }
+    .startup.active{
+        display: block;
+    }
+    .streamer.active{
+        display: block;
+    }
+    .professional.active{
+        display: block;
+    }
+    .enterprisePrice.active{
+        display: block !important;
+    }
+    
+    
+
+
+}
 
 
 /* MD Device :768px. */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    #presentation {
+        padding: 50px 0 113px 0;
+    }
+    #brandArea {
+        padding-top: 50px;
+    }
+    #footerArea .footerLogoBox {
+        margin-bottom: 50px;
+    }
+}
 
 
 @media (max-width: 767px) {}
 
 /*-- Phone Landscape --*/
-@media only screen and (min-width: 576px) and (max-width: 767px) {}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    #heroSection .rightImageBox img {
+        width: 70%;
+    }
+    #presentation {
+        padding: 50px 0 108px 0;
+    }
+    #brandArea {
+        padding: 50px 0px;
+    }
+    #footerArea .footerLogoBox {
+        margin-bottom: 50px;
+    }
+    #brandArea .brandItemBox .songleBrandItem {
+        width: 30%;
+    }
+    #brandArea .brandItemBox img {
+        height: 22px;
+    }
+    #doubleInfoBox .bleft {
+        padding-left: 0px;
+    }
+    #doubleInfoBox .bright {
+        border-right: none;
+        border-bottom: 1px solid #ccd6df;
+        padding-right: 0px;
+    }
+}
 
 
 /* Extra small Device. */
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+    #heroSection .rightImageBox {
+        display: none !important;
+    }
+    #heroSection .bannerContent h3 br {
+        display: none;
+    }
+    #heroSection .bannerContent p br {
+        display: none;
+    }
+    #heroSection .bannerContent ul li {
+        margin-right: 5px;
+    }
+    #heroSection .bannerContent ul li a {
+        width: 137px;
+        height: 55px;
+        line-height: 55px;
+    }
+    #brandArea {
+        padding: 70px 0px 100px 0px;
+        background-color: #EBEFF4;
+    }
+    /* #brandArea .brandItemBox .songleBrandItem {
+        width: 30%;
+    }
+    #brandArea .brandItemBox img {
+        height: 22px;
+    } */
+    #doubleInfoBox .bleft {
+        padding-left: 20px;
+    }
+    #doubleInfoBox .bright {
+        border-right: none;
+        border-bottom: 1px solid #ccd6df;
+        padding-right: 20px;
+    }
+    #footerArea .footerLogoBox {
+        margin-bottom: 50px;
+    }
+    #footerArea .menuBox .menuBoxItem{
+        width: 31%;
+    }
+    .mobileMenuContent .mobileNav ul li a {
+        padding: 14px 20px;
+        font-size: 12px;
+    }
+    .getApiKey{
+        padding: 10px 0px;
+    }
+    #cookieNotice.display-right {
+        right: 0px;
+        bottom: 0px;
+        max-width: 100%;
+        border-radius: 0px;
+    }
+}

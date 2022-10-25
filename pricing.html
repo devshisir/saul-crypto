@@ -24,14 +24,14 @@
    <header id="headerTop">
       <div class="container">
          <div class="row align-items-center">
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3">
                <div class="logoBox">
                   <a href="index.html">
                      <img src="./asset/img/logo.svg" class="img-fluid" alt="">
                   </a>
                </div>
             </div>
-            <div class="col-xl-9">
+            <div class="col-xl-9 col-lg-9">
                <div class="rightMenuBox text-end">
                   <div class="menuBox">
                      <nav>
@@ -76,6 +76,70 @@
       </div>
    </header>
    <!-- end header top area -->
+   <!-- start mobile menu -->
+   <div id="mobileMenu">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-4">
+               <div class="mobileLogo">
+                  <a href="index.html">
+                     <img src="./asset/img/logo.svg" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="col-8">
+               <div class="menuToggle text-end">
+                  <button type="button" data-bs-toggle="collapse" data-bs-target="#menuToggleContent">
+                     <i class="fa-light fa-bars"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end mobile menu -->
+   <!-- mobile menu content -->
+   <div class="collapse  mobileMenuContent" id="menuToggleContent">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="mobileNav">
+                  <ul>
+                     <li class="active">
+                        <a href="./pricing.html">Pricing</a>
+                     </li>
+                     <li>
+                        <a href="#">Documentation</a>
+                     </li>
+                     <li>
+                        <a href="#">FAQ</a>
+                     </li>
+                     <li>
+                        <a href="#">Affiliates</a>
+                     </li>
+                     <li>
+                        <a href="#">Blog</a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="menuIcon"></span>
+                           Status
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           Login
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="getApiKey">
+                  <a href="#">get free API key</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
    <!-- start pricing hero -->
    <section id="pricingHero">
       <div class="container">
@@ -98,6 +162,15 @@
                      </div>
                   </div>
                </div>
+               <div class="mobileSelectPrice">
+                  <select class="form-select selectPriceOptions" aria-label="Default select example">
+                     <option selected value="1">Free</option>
+                     <option value="2">Startup</option>
+                     <option value="3">STREAMER</option>
+                     <option value="4">PROFESSIONAL</option>
+                     <option value="5">ENTERPRISE</option>
+                   </select>
+               </div>
             </div>
          </div>
       </div>
@@ -108,9 +181,9 @@
       <div class="container">
          <div class="row pricingWrapper">
             <!-- pricing item -->
-            <div class="col-xl-9">
+            <div class="col-xl-9 col-12">
                <div class="row">
-                  <div class="col-xl-3">
+                  <div class="col-xl-3 col-lg-3 free">
                      <div class="pricingItem">
                         <div class="headingPart text-center">
                            <h6>FREE</h6>
@@ -138,12 +211,12 @@
                            </div>
                         </div>
                         <div class="actionBox text-center">
-                           <p>For testing or hobby projects</p>
+                           <p>For testing or hobby <br> projects</p>
                            <a href="#">Get a free api key</a>
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-xl-3 col-lg-3 startup">
                      <div class="pricingItem">
                         <div class="headingPart text-center">
                            <h6>STARTUP</h6>
@@ -179,7 +252,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-xl-3 col-lg-3 streamer">
                      <div class="pricingItem">
                         <div class="headingPart text-center">
                            <h6>STREAMER</h6>
@@ -215,7 +288,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-3">
+                  <div class="col-xl-3 col-lg-3 professional">
                      <div class="pricingItem">
                         <div class="headingPart text-center">
                            <h6>PROFESSIONAL</h6>
@@ -246,7 +319,7 @@
                            </div>
                         </div>
                         <div class="actionBox text-center">
-                           <p>For medium+ size integrations</p>
+                           <p>For medium+ size <br> integrations</p>
                            <a href="#">Subscribe</a>
                         </div>
                      </div>
@@ -254,7 +327,7 @@
                </div>
             </div>
             <!-- pricing right info -->
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-4 col-md-7 mx-auto enterprisePrice">
                <div class="pricingItem enterprise">
                   <div class="headingPart text-center">
                      <h6>ENTERPRISE</h6>
@@ -287,25 +360,25 @@
                </div>
                <div class="bottomItem">
                   <div class="row">
-                     <div class="col-xl-6">
+                     <div class="col-xl-6 col-lg-6">
                         <div class="singleItem">
                            <h5>What is counted as a request on the REST API?</h5>
                            <p>A request is deemed to be a single one if the limit query parameter on endpoint isn’t available, or isn’t used. Otherwise — if the limit query parameter is available and is used — then each of the 100 data points actually returned in response are counted as one request.</p>
                         </div>
                      </div>
-                     <div class="col-xl-6">
+                     <div class="col-xl-6 col-lg-6">
                         <div class="singleItem">
                            <h5>How long does it take to integrate CoinAPI?</h5>
                            <p>We will deliver an API key to your email address within a minute after you subscribe. With this key, you can use our API right away. The integration component is up to you: it can take just five minutes for simple projects or several days for most complicated ones. Don't forget to check out our <a href="#">SDK on GitHub.</a></p>
                         </div>
                      </div>
-                     <div class="col-xl-6">
+                     <div class="col-xl-6 col-lg-6">
                         <div class="singleItem">
                            <h5>What exchanges and assets are integrated?</h5>
                            <a href="#">Check out our Scope of Integration by clicking here.</a>
                         </div>
                      </div>
-                     <div class="col-xl-6">
+                     <div class="col-xl-6 col-lg-6">
                         <div class="singleItem">
                            <h5>What are the restrictions on usage of real-time protocols?</h5>
                            <p>Real-time streaming protocols are restricted by the data types available and maximum number of concurrent connections.Real-time streaming protocols are restricted by the data types available and maximum number of concurrent connections.</p>
@@ -599,7 +672,7 @@
          <div class="pricefullBottomInfo">
             <div class="container pricefullBottomInfoContainer">
                <div class="row align-items-center">
-                  <div class="col-xl-4">
+                  <div class="col-xl-4 col-lg-4">
                      <div class="leftInfo text-center">
                         <div class="icon">
                            <img src="./asset/img/pricing/enterprise.webp" alt="">
@@ -611,9 +684,9 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-xl-7 mx-auto">
+                  <div class="col-xl-7 col-lg-8 mx-auto">
                      <div class="row">
-                        <div class="col-xl-6">
+                        <div class="col-xl-6 col-lg-6">
                            <div class="rightContent">
                               <ul>
                                  <li>History data in flat files</li>
@@ -624,7 +697,7 @@
                               </ul>
                            </div>
                         </div>
-                        <div class="col-xl-6">
+                        <div class="col-xl-6 col-lg-6">
                            <div class="rightContent">
                               <ul>
                                  <li>Integration Assistance</li>
@@ -647,7 +720,7 @@
    <section class="commonInfoBox infoBox1">
       <div class="container">
          <div class="row">
-            <div class="col-xl-7 mx-auto">
+            <div class="col-xl-7 col-lg-7 mx-auto">
                <div class="contentBox text-center">
                   <h4>{ Interested in flat files? }</h4>
                   <p>If you are interested in market data in flat files to download on a pay-as-you-go model, then take a look at our another product offering available through CryptoTick.com website.</p>
@@ -658,43 +731,34 @@
       </div>
    </section>
    <!-- interested flat area -->
-      <!-- interested flat area -->
-      <section class="commonInfoBox infoBox2">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-7 mx-auto">
-                  <div class="contentBox text-center">
-                     <h4>hard to make a decision?</h4>
-                     <p>This is perhaps the perfect moment to stop reading <br> and do some clicking instead.</p>
-                     <ul>
-                        <li>
-                           <a href="#">Read FAQ</a>
-                        </li>
-                        <li>
-                           <a href="#">Talk to human</a>
-                        </li>
-                     </ul>
-                  </div>
+   <!-- interested flat area -->
+   <section class="commonInfoBox infoBox2">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-7 col-lg-7 mx-auto">
+               <div class="contentBox text-center">
+                  <h4>hard to make a decision?</h4>
+                  <p>This is perhaps the perfect moment to stop reading <br> and do some clicking instead.</p>
+                  <ul>
+                     <li>
+                        <a href="#">Read FAQ</a>
+                     </li>
+                     <li>
+                        <a href="#">Talk to human</a>
+                     </li>
+                  </ul>
                </div>
             </div>
          </div>
-      </section>
-      <!-- interested flat area -->
-
-
-
-
-
-
-
-
-
+      </div>
+   </section>
+   <!-- interested flat area -->
 
    <!-- start footer area -->
    <footer id="footerArea">
       <div class="container">
          <div class="row">
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3">
                <div class="footerLogoBox">
                   <div class="logo">
                      <a href="index.html">
@@ -737,7 +801,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-xl-9">
+            <div class="col-xl-9 col-lg-9">
                <div class="menuBox">
                   <div class="menuBoxItem">
                      <h4>PRODUCT</h4>
@@ -824,23 +888,22 @@
       </div>
    </footer>
    <!-- end footer area -->
-   
    <!-- start cookie area -->
    <div id="cookieNotice" class="light display-right">
       <div id="closeIcon" style="display: none;">
       </div>
       <div class="title-wrap">
-            <h4>Cookie Consent</h4>
+          <h4>Cookie Consent</h4>
       </div>
       <div class="content-wrap">
-            <div class="msg-wrap">
-               <p>This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our  <a href="#">Privacy Policy</a></p>
-               <div class="btn-wrap">
+          <div class="msg-wrap">
+              <p>This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our  <a href="#">Privacy Policy</a></p>
+              <div class="btn-wrap">
                   <button onclick="acceptCookieConsent();">Accept</button>
-               </div>
-            </div>
+              </div>
+          </div>
       </div>
-   </div>
+  </div>
 
 
    <!-- all javascript load here -->

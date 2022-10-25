@@ -24,14 +24,14 @@
    <header id="headerTop">
       <div class="container">
          <div class="row align-items-center">
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3">
                <div class="logoBox">
                   <a href="index.html">
                      <img src="./asset/img/logo.svg" class="img-fluid" alt="">
                   </a>
                </div>
             </div>
-            <div class="col-xl-9">
+            <div class="col-xl-9 col-lg-9">
                <div class="rightMenuBox text-end">
                   <div class="menuBox">
                      <nav>
@@ -76,11 +76,77 @@
       </div>
    </header>
    <!-- end header top area -->
+   <!-- start mobile menu -->
+   <div id="mobileMenu">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-4">
+               <div class="mobileLogo">
+                  <a href="index.html">
+                     <img src="./asset/img/logo.svg" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="col-8">
+               <div class="menuToggle text-end">
+                  <button type="button" data-bs-toggle="collapse" data-bs-target="#menuToggleContent">
+                     <i class="fa-light fa-bars"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end mobile menu -->
+   <!-- mobile menu content -->
+   <div class="collapse  mobileMenuContent" id="menuToggleContent">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="mobileNav">
+                  <ul>
+                     <li>
+                        <a href="./pricing.html">Pricing</a>
+                     </li>
+                     <li>
+                        <a href="#">Documentation</a>
+                     </li>
+                     <li>
+                        <a href="#">FAQ</a>
+                     </li>
+                     <li>
+                        <a href="#">Affiliates</a>
+                     </li>
+                     <li>
+                        <a href="#">Blog</a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <span class="menuIcon"></span>
+                           Status
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           Login
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="getApiKey">
+                  <a href="#">get free API key</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
    <!-- start hero banner -->
    <section id="heroSection" style="background-image: url('./asset/img/hero-baner.png');">
       <div class="container">
-         <div class="row align-items-center">
-            <div class="col-xl-6">
+         <div class="row align-items-center flex-reverse">
+            <div class="col-xl-6 col-lg-6">
                <div class="bannerContent">
                   <h3>Real-time Crypto Currency <br>  Exchange Rates JSON <br> Rest API</h3>
                   <p>Your trusted resource for accurate crypto market data, <br>
@@ -95,7 +161,7 @@
                   </ul>
                </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-6">
                <div class="rightImageBox text-end">
                   <img src="./asset/img/banner-right.png" alt="">
                </div>
@@ -189,7 +255,7 @@
                </div>
                <div class="mainItemBox">
                   <div class="row">
-                     <div class="col-xl-4">
+                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="singleItemBox">
                            <div class="topHead">
                               <div class="icon"><i class="fa-light fa-database"></i></div>
@@ -202,7 +268,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-xl-4">
+                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="singleItemBox">
                            <div class="topHead">
                               <div class="icon"><i class="fa-light fa-server"></i></div>
@@ -215,7 +281,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-xl-4">
+                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="singleItemBox">
                            <div class="topHead">
                               <div class="icon"><i class="fa-light fa-clock"></i></div>
@@ -228,7 +294,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-xl-4">
+                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="singleItemBox">
                            <div class="topHead">
                               <div class="icon"><i class="fa-light fa-square-terminal"></i></div>
@@ -241,7 +307,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-xl-4">
+                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="singleItemBox">
                            <div class="topHead">
                               <div class="icon"><i class="fa-light fa-shield-check"></i></div>
@@ -254,7 +320,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-xl-4">
+                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="singleItemBox">
                            <div class="topHead">
                               <div class="icon"><i class="fa-light fa-life-ring"></i></div>
@@ -362,7 +428,7 @@
    <section id="doubleInfoBox">
       <div class="container">
          <div class="row">
-            <div class="col-xl-6 bright">
+            <div class="col-xl-6 col-lg-6 col-md-6 bright">
                <div class="infoContent">
                   <div class="topHead">
                      <i class="fa-light fa-users"></i>
@@ -374,7 +440,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-xl-6 bleft">
+            <div class="col-xl-6 col-lg-6 col-md-6 bleft">
                <div class="infoContent">
                   <div class="topHead">
                      <i class="fa-light fa-tags"></i>
@@ -394,7 +460,7 @@
    <footer id="footerArea">
       <div class="container">
          <div class="row">
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3">
                <div class="footerLogoBox">
                   <div class="logo">
                      <a href="index.html">
@@ -437,7 +503,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-xl-9">
+            <div class="col-xl-9 col-lg-9">
                <div class="menuBox">
                   <div class="menuBoxItem">
                      <h4>PRODUCT</h4>

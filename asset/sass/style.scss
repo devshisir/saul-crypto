@@ -120,6 +120,97 @@ sans-serif;
     }
 }
 
+// mobileMenu
+#mobileMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0px;
+    display: none;
+
+    .mobileLogo {
+        img {
+            height: 50px;
+        }
+    }
+
+    .menuToggle {
+        button {
+            height: 50px;
+            width: 50px;
+            font-size: 25px;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+        }
+    }
+}
+
+// mobileMenuContent
+.mobileMenuContent {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    background-color: #fff;
+    z-index: 999999;
+    overflow: hidden;
+
+    .container {
+        padding: 0px;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .mobileNav {
+        ul {
+            li {
+                display: block;
+
+                a {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 13px;
+                    color: #333333;
+                    padding: 17px 40px;
+                    border-bottom: 1px solid rgba(221, 221, 221, 0.548);
+                }
+
+                .menuIcon {
+                    height: 10px;
+                    width: 10px;
+                    background-color: #47c652;
+                    display: inline-block;
+                    border-radius: 50%;
+                    margin-right: 4px;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+
+            .active {
+                a {
+                    color: #77ce7ed3;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .getApiKey {
+        a {
+            background-color: #df7055;
+            display: inline-block;
+            padding: 17px 40px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 13px;
+        }
+    }
+}
+
 
 
 // start hero section
@@ -127,7 +218,7 @@ sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 200px 0px;
+    padding: 150px 0px 100px 0px;
 
     .bannerContent {
         h3 {
@@ -177,6 +268,12 @@ sans-serif;
                     color: #fff;
                 }
             }
+        }
+    }
+
+    .rightImageBox {
+        img {
+            width: 504px;
         }
     }
 }
@@ -1179,6 +1276,7 @@ sans-serif;
     background-color: #fff;
     position: relative;
     border-bottom: 1px solid #e0ebfc;
+    z-index: 1;
 
     .contentBox {
         h4 {
@@ -1226,6 +1324,7 @@ sans-serif;
         content: "";
         bottom: 0;
         left: 105px;
+        z-index: -1;
     }
 
     &::before {
@@ -1236,6 +1335,7 @@ sans-serif;
         content: "";
         top: 0;
         right: 0px;
+        z-index: -1;
     }
 }
 
@@ -1333,5 +1433,24 @@ sans-serif;
     &:hover {
         text-decoration: underline;
         opacity: 0.8;
+    }
+}
+
+// mobileSelectPrice
+.mobileSelectPrice {
+    display: none;
+    margin-top: 20px;
+
+    select {
+        height: 60px;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .form-select:focus {
+        box-shadow: none;
     }
 }
