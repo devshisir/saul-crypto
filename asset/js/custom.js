@@ -47,10 +47,9 @@ $(document).ready(function() {
 
 
     // pricing select get value
-        $('.free').addClass('active')
+    $('.free').addClass('active')
     $('.selectPriceOptions').on('change',function(e){
         var val = $(this).find(":selected").val();
-        console.log(val)
         var free = $('.free');
         var startup = $('.startup');
         var streamer = $('.streamer');
@@ -90,6 +89,40 @@ $(document).ready(function() {
             streamer.removeClass('active')
             startup.removeClass('active')
             free.removeClass('active')
+        }
+    })
+
+    // mobile price table toggle
+    $('.freePrice').addClass('active');
+    $('.selectPriceTableMobile').on('change',function(e){
+        var val2 = $(this).find(":selected").val();
+        var freePrice = $('.freePrice');
+        var startupPrice = $('.startupPrice');
+        var steamerprice = $('.steamerprice');
+        var professionalprice = $('.professionalprice');
+        if(val2 == 1){
+            freePrice.addClass('active');
+            startupPrice.removeClass('active');
+            steamerprice.removeClass('active');
+            professionalprice.removeClass('active');
+        }
+        if(val2 == 2){
+            freePrice.removeClass('active');
+            startupPrice.addClass('active');
+            steamerprice.removeClass('active');
+            professionalprice.removeClass('active');
+        }
+        if(val2 == 3){
+            freePrice.removeClass('active');
+            startupPrice.removeClass('active');
+            steamerprice.addClass('active');
+            professionalprice.removeClass('active');
+        }
+        if(val2 == 4){
+            freePrice.removeClass('active');
+            startupPrice.removeClass('active');
+            steamerprice.removeClass('active');
+            professionalprice.addClass('active');
         }
     })
 

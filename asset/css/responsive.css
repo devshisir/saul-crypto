@@ -81,7 +81,13 @@
     .enterprisePrice.active{
         display: block !important;
     }
-    
+
+    #pricingArea .pricefullBottomInfo .leftInfo {
+        border: none;
+    }
+    .pricingmoreInfoMobile{
+        display: block;
+    }
     
 
 
@@ -102,7 +108,27 @@
 }
 
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    #pricingHero .content h3 {
+        font-size: 30px;
+    }
+    #pricingHero .content .toggleSwithPrice .infoBox p {
+        font-size: 13px;
+    }
+    #pricingHero {
+        padding: 98px 0px 132px 0px;
+    }
+    #pricingArea .pricingWrapper {
+        margin-top: -199px;
+    }
+    .commonInfoBox {
+        overflow: hidden;
+        padding: 70px 0px;
+    }
+    .infoBox1::before,.infoBox1::after{
+        opacity: 0.4;
+    }
+}
 
 /*-- Phone Landscape --*/
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -190,5 +216,26 @@
         bottom: 0px;
         max-width: 100%;
         border-radius: 0px;
+    }
+    .commonInfoBox .contentBox h4 {
+        font-size: 30px;
+    }
+    .infoBox2 .contentBox ul li {
+        display: block;
+        margin: 0;
+    }
+    .infoBox2 .contentBox ul{
+        margin-top: 20px;
+    }
+    .infoBox2 .contentBox ul li a {
+        min-width: 100%;
+        display: block;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .commonInfoBox .contentBox a {
+        display: block;
+        width: 100%;
     }
 }
