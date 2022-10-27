@@ -1,39 +1,30 @@
 $(document).ready(function() {
     // data slider
-    $('.owl-carousel').owlCarousel({
-        items:5,
-        loop:true,
-        margin:0,
-        nav:false,
-        dots:true,
-        mouseDrag:false,
-        touchDrag:false,
-        autoplay: true,
-        slideTransition: 'linear',
-        autoplayTimeout: 6000,
-        autoplaySpeed: 6000,
-        autoplayHoverPause: false,
-        responsive : {
-            0:{
-                items: 1,
-            },
-            576:{
-                items: 2,
-            },
-            768 : {
-                items: 2,
-            },
-            992 : {
-                items: 3, 
-            },
-            1200:{
-                items: 4,
-            },
-            1400:{
-                items: 5,
-            }
-        }
+    
+
+    // header menu fix
+    $(window).scroll(function(){
+        var sticky = $('#headerTop'),
+            scroll = $(window).scrollTop();
+      
+        if (scroll >= 50) sticky.addClass('fixed');
+        else sticky.removeClass('fixed');
     });
+
+    // mobile menu fix
+    $(window).scroll(function(){
+        var sticky2 = $('#mobileMenu'),
+            scroll2 = $(window).scrollTop();
+      
+        if (scroll2 >= 50) sticky2.addClass('fixed');
+        else sticky2.removeClass('fixed');
+    });
+
+    
+
+
+
+
 
     // pricing input toggle
     $('.swithBox input[type="checkbox"]').click(function(){

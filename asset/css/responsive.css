@@ -88,6 +88,10 @@
     .pricingmoreInfoMobile{
         display: block;
     }
+
+    #heroSection .rightImageBox{
+        display: none;
+    }
     
 
 
